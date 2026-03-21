@@ -1,0 +1,10 @@
+#banner {
+    width:100%;
+    background-color: blue;
+}
+
+#pfpic {
+    width: 35em ;
+    background-color: aquamarine;
+    border-radius: 5%;
+}
