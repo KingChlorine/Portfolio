@@ -1,10 +1,58 @@
-#banner {
+.navbar {
+    display: flex;
+    text-decoration: none;
+    list-style-type:none;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: black;
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.links {padding-right: 3em;}
+
+#tagline {
+         color: whitesmoke;
+         margin: 0px;
+         font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         font-size: 3em;
+         width: 5em;
+         padding-left: 3em;
+         }
+
+.banner {
     width:100%;
-    background-color: blue;
+    height: min(35rem);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    
+   
+
 }
 
 #pfpic {
-    width: 35em ;
-    background-color: aquamarine;
-    border-radius: 5%;
+    display: flex;
+    justify-self: flex-end;
+    width: min(19em);
+    height:20em;
+    background-color: rgb(171, 178, 185);
+    border-radius: 100%;
+    position:relative;
+    bottom: 28em;
+    margin-right: 8em;
+}
+.gallery{
+    background-color: gray;
+    height: 20em;
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    #pfpic{
+        justify-self: center;
+        margin: 0;}
 }
