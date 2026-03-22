@@ -11,6 +11,8 @@
     border-bottom: 1px solid whitesmoke;
 }
 
+* {margin: 0px;}
+
 .links {padding-right: 3em;}
 
 #tagline {
@@ -18,8 +20,11 @@
          margin: 0px;
          font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
          font-size: 3em;
-         width: 5em;
-         padding-left: 3em;
+         max-width: 10em;
+         flex: 1;
+         padding-left: 2em;
+      
+         
          }
 
 .banner {
@@ -27,11 +32,14 @@
     height: min(35rem);
     background-color: rgb(0, 0, 0);
     display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
     align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap:20em;
     margin: 0px;
-    
-   
-
+    border-bottom: 4px solid whitesmoke;
 }
 
 #pfpic {
@@ -39,20 +47,69 @@
     justify-self: flex-end;
     width: min(19em);
     height:20em;
-    background-color: rgb(171, 178, 185);
+    background-color: rgb(220, 220, 220);
     border-radius: 100%;
-    position:relative;
-    bottom: 28em;
-    margin-right: 8em;
+    margin-right: 12em;
+   
 }
 .gallery{
-    background-color: gray;
-    height: 20em;
-    width: 100%;
+    background-color: rgb(37, 37, 37);
+    color: rgb(220, 220, 220);
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    display:flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+  
+    }
+
+.project{
+    width: 42.5em;
+    height: 25em;
+    background-color: rgb(220, 220, 220);
+    border-radius: 1%;
 }
 
-@media screen and (max-width:600px) {
+/*remember to give specific id when using more headings*/
+
+h1{
+    background-color: rgb(37, 37, 37);
+    margin: 0px;
+    padding-left: 3em;
+    color: rgb(220, 220, 220);
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width:1100px) {
+
+    .banner {
+    padding-top: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5em;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+
     #pfpic{
         justify-self: center;
-        margin: 0;}
+        margin: 0;
+        width: 15em;
+        height: 15em;
+        }
+
+    #tagline {
+         color: whitesmoke;
+         margin: 0px;
+         font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         font-size: 2.5em;
+         padding-left: 0em;
+         
+       
+         
+         }
 }
