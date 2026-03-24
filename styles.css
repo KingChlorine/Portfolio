@@ -70,7 +70,7 @@
     }
 
 .project{
-    max-width: 42.5em;
+    width: 42.5em;
     height: 22em;
     background-color: rgb(220, 220, 220);
     border-top-left-radius: 1%;
