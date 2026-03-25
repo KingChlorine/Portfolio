@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -10,7 +11,7 @@
     <div class="navbar">
             
                 <a href="#projects" class="links" id="portfolio">Portfolio</a>
-                <li class="links" id="about">About</li>
+                <button class="links" id="about" onclick="replaceElement()">About</button>
                 <li class="links" id="contact">Contact</li>
                 
            
@@ -18,6 +19,8 @@
     </div>
     <div class="banner">
         <p id="tagline">Hi, I'm Jack, of all trades.</p>
+      
+    
         <img src="me.JPG" id="pfpic"></img>
         
     </div>
@@ -43,7 +46,7 @@
     </div>
 
 
-        <h1>About</h1>
+        <h1 id="aboutSection">About</h1>
         
            <div class="textarea"><div class="text">i’m sorry to hear that your grandma passed away I 
                 actually am like obviously i’m gonna be upset about that innit yeah but hadiqah you know 
@@ -54,7 +57,9 @@
 
     <div class="footer">
 
-    </div>
+   </div>
+
+     
 
 
 </body>
