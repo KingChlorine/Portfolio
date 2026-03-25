@@ -1,6 +1,6 @@
 function replaceElement() {
     const tagline = document.getElementById('tagline');
-    const banner = document.querySelector('.banner');
+    const banner = document.querySelector('.pfpic');
 
     const longMessage = `<h2>About</h2>I’m sorry to hear that your grandma passed away I
     actually am like obviously I’m gonna be upset about
@@ -18,12 +18,16 @@ function replaceElement() {
         tagline.style.fontSize = "1rem";
         tagline.style.width = "19.5em";
         tagline.style.display = "block";
+        
+        
 
 
-        banner.classList.add("expanded");
+        pfpic.classList.add("expanded");
     } else {
         tagline.innerHTML = originalText;
         tagline.style.fontSize = "";
         tagline.style.width = "";
+
+        pfpic.classList.remove("expanded");
     }
 }

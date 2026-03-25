@@ -140,23 +140,29 @@ h1{
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap:5em;
+    gap:2em;
     margin: 0px;
     text-align: center;
     padding-bottom: 2em;
 }
 
-.banner.expanded {
-    height: 42em;
-}
+#pfpic.expanded {
+  
+   max-height: 12em;
+   width: auto;
+   transform: scale(.9);
+   transition: transform 0.4s ease-in-out;
+
+} 
 
 h2 {padding: 1em;}
 
     #pfpic{
+        
         justify-self: center;
         margin: 0;
         width: 20em;
-        height: 20em;
+        max-height: 20em;
         }
 
     #tagline {
